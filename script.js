@@ -52,7 +52,7 @@ function mainMenuScreen() {
   animation.y = -800
   setTimeout(() => {
     onplaying = false
-    document.getElementById('gameScreen').style.backgroundImage = "url('assets/mainBg.png')";
+    document.getElementById('gameScreen').style.backgroundImage = "url('main/assets/mainBg.png')";
     document.getElementById("endOfLevelScreen").style.display = "none";
     document.getElementById("selectSwords").style.display = "none";
     document.getElementById("creditsMenu").style.display = "none";
