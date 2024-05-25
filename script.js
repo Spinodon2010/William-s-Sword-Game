@@ -3064,5 +3064,3 @@ setInterval(changeFrame, 200)
 //END
 playerAnimate()
 movementForPlayer()
-swordType = "Mechanical 1"
-starDust = 100000000000
