@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="gameScreen">
+    <p id=text></p>
+    <div id="topBar"></div>
+    <div id="menu1">
+      <p class="title">William's Sword Game</p>
+      <img id="animation" src="./assets/titleImg.png">
+      <button id="play" class="button" onclick="playLevelsScreen()">Play</button>
+      <button id="swords" class="button" onclick="swordsScreen()">Swords</button>
+      <button id="credits" class="button" onclick="creditsScreen()">Credits</button>
+      <button id="unlockSwords" class="button" onclick="unlockScreen()">Sword Unlock</button>
+    </div>
+
+
+    <div id="creditsMenu">
+      <p>Art and Concept by William Mcdonald;</p>
+      <p>Programming by Kip Pilcher;</p>
+      <p>Music by Kip Pilcher;</p>
+      <button class="cbutton" onclick="mainMenuScreen()">Main Menu</button>
+    </div>
+
+
+    <div id="selectSwords">
+      <img id="animatedSwordSelect" src="./assets/animatedSword.png">
+      <select id="select" onchange="updateWeapon()">
+        <option>Select Sword</option>
+        <option>Mechanical Level 1</option>
+        <option>Mechanical Level 2</option>
+        <option>Mechanical Level 3</option>
+        <option>Solar Level 1</option>
+        <option>Solar Level 2</option>
+        <option>Solar Level 3</option>
+        <option>Fire Level 1</option>
+        <option>Fire Level 2</option>
+        <option>Fire Level 3</option>
+        <option>Ice Level 1</option>
+        <option>Ice Level 2</option>
+        <option>Ice Level 3</option>
+      </select>
+      <button id="backFromSwords" class="button" onclick="mainMenuScreen()">Main Menu</button>
+    </div>
+
+
+    <div id="unlockScreen">
+      <img id="starDustImg" src="./assets/starDustIcon.png">
+      <p id="starDustText"><mark>0</mark></p>
+      <button id="menuUnlock" onclick="mainMenuScreen()">Main Menu</button>
+      <button id="unlock" onclick="newWeapon()">Unlock Random Weapon for 1000 Stardust!</button>
+    </div>
+
+
+    <div id="levelSelectScreen">
+      <button id="backFromLevels" onclick="mainMenuScreen()">Main Menu</button>
+      <p class="infoLevel">Start with level one for the best experience. More difficult levels require better swords and
+        powerups.</p>
+      <div id="containerForLevels">
+        <p onclick="playLevel1()" id="level"><img width="20" height="20" src="./assets/metalIcon.png">1</p>
+        <p onclick="playLevel2()" id="level"><img width="20" height="20" src="./assets/metalIcon.png">2</p>
+        <p onclick="playLevel3()" id="level"><img width="20" height="20" src="./assets/metalIcon.png">3</p>
+        <p onclick="playLevel4()" id="level"><img width="20" height="20" src="./assets/metalIcon.png">4</p>
+        <p onclick="playLevel5()" id="level"><img width="20" height="20" src="./assets/metalIcon.png">5</p>
+        <p onclick="playLevel6()" id="level"><img width="20" height="20" src="./assets/metalIcon.png">6</p>
+        <p onclick="playLevel7()" id="level"><img width="20" height="20" src="./assets/metalIcon.png">7</p>
+        <p onclick="playLevel8()" id="level"><img width="20" height="20" src="./assets/iceIcon.png">8</p>
+        <p onclick="playLevel9()" id="level"><img width="20" height="20" src="./assets/iceIcon.png">9</p>
+        <p onclick="playLevel10()" id="level"><img width="20" height="20" src="./assets/iceIcon.png">10</p>
+        <p onclick="playLevel11()" id="level"><img width="20" height="20" src="./assets/iceIcon.png">11</p>
+        <p onclick="playLevel12()" id="level"><img width="20" height="20" src="./assets/iceIcon.png">12</p>
+        <p onclick="playLevel13()" id="level"><img width="20" height="20" src="./assets/iceIcon.png">13</p>
+        <p onclick="playLevel14()" id="level"><img width="20" height="20" src="./assets/iceIcon.png">14</p>
+        <p onclick="playLevel15()" id="level"><img width="20" height="20" src="./assets/sunIcon.png">15</p>
+        <p onclick="playLevel16()" id="level"><img width="20" height="20" src="./assets/sunIcon.png">16</p>
+        <p onclick="playLevel17()" id="level"><img width="20" height="20" src="./assets/sunIcon.png">17</p>
+        <p onclick="playLevel18()" id="level"><img width="20" height="20" src="./assets/sunIcon.png">18</p>
+        <p onclick="playLevel19()" id="level"><img width="20" height="20" src="./assets/sunIcon.png">19</p>
+        <p onclick="playLevel20()" id="level"><img width="20" height="20" src="./assets/sunIcon.png">20</p>
+        <p onclick="playLevel21()" id="level"><img width="20" height="20" src="./assets/sunIcon.png">21</p>
+        <p onclick="playLevel22()" id="level"><img width="20" height="20" src="./assets/fireIcon.png">22</p>
+        <p onclick="playLevel23()" id="level"><img width="20" height="20" src="./assets/fireIcon.png">23</p>
+        <p onclick="playLevel24()" id="level"><img width="20" height="20" src="./assets/fireIcon.png">24</p>
+        <p onclick="playLevel25()" id="level"><img width="20" height="20" src="./assets/fireIcon.png">25</p>
+        <p onclick="playLevel26()" id="level"><img width="20" height="20" src="./assets/fireIcon.png">26</p>
+        <p onclick="playLevel27()" id="level"><img width="20" height="20" src="./assets/fireIcon.png">27</p>
+        <p onclick="playLevel28()" id="level"><img width="20" height="20" src="./assets/fireIcon.png">28</p>
+      </div>
+    </div>
+
+    <div id="playerHealth">
+    </div>
+    <div id="behindPlayerHealth"></div>
+      
+      <div id="endOfLevelScreen">
+    <div class=blur>
+      <img id="endLevelImg" src="assets/endLevelImg.png">
+      <button id="backFromLevels" onclick="mainMenuScreen()">Main Menu</button>
+      <div>
+      </div>
+    </div>
+  </div>
+
+  <div id="endOfLevelScreenOneLife">
+    <div class=blur>
+      <img id="endLevelImgYouDied" src="assets/youDied.png">
+      <button id="backFromLevels" onclick="mainMenuScreen()">Main Menu</button>
+      <div>
+      </div>
+    </div>
+  </div>
+
+  <div id="animationDiv"></div>
+  </div>
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <!-- <script src="https://replit.com/public/js/replit-badge-v2.js" theme="teal" position="bottom-right"></script> -->
+</body>
+
+</html>

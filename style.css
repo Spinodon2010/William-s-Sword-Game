@@ -1,0 +1,311 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.blur {
+  height: 600px;
+  width: 1000px;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1000000;
+}
+
+#gameScreen {
+  width: 1000px;
+  height: 600px;
+  background-color: #141414;
+  position: absolute;
+  transform: translate(150px, 0px);
+  z-index: 0;
+  background-size: cover;
+  background-image: url("assets/mainBg.png");
+  margin-left: 10px;
+}
+
+#behindPlayerHealth {
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  background-color: #2b0057;
+  width: 75px;
+  height: 10px;
+  position: absolute;
+}
+#playerHealth {
+  top: 0px;
+  left: 0px;
+  z-index: 11;
+  background-color: #d30303;
+  width: 75px;
+  height: 10px;
+  position: absolute;
+}
+
+#music {
+  width: 125px;
+}
+
+#topBar {
+  width: 40px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0px;
+  left: 100px;
+}
+
+#endLevelImg {
+  position: absolute;
+  transform: translate(260px, 100px);
+  z-index: 10000000000000000000;
+}
+
+#text {
+  color: white;
+  font-size: 0px;
+}
+#menu1 {
+  transform: translate(0px, 0px);
+  background-size: cover;
+}
+
+.title {
+  padding-top: 30px;
+  text-align: center;
+  height: 50px;
+  width: 300px;
+  background-color: #023602;
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+  position: absolute;
+  border: 5px solid #000000;
+  ;
+  transform: translate(325px, 0px);
+}
+
+#animation {
+  position: absolute;
+  transform: translate(405px, 120px);
+}
+
+.button {
+  transform: translate(395px, 300px);
+  background-size: cover;
+  position: absolute;
+  width: 150px;
+  height: 45px;
+  background-image: linear-gradient(to right, #000000, #00d5ff, black);
+  border: 5px solid #000000;
+}
+
+.button:hover {
+  transform: translate(395px, 300px);
+  background-size: cover;
+  position: absolute;
+  width: 150px;
+  height: 45px;
+  background-image: linear-gradient(to right, #000000, #00d5ff, black);
+  border: 10px solid #1ffffb;
+}
+
+.cbutton {
+  transform: translate(-75px, 0px);
+  background-size: cover;
+  position: absolute;
+  width: 150px;
+  height: 45px;
+  background-image: linear-gradient(to right, #000000, #00d5ff, black);
+  border: 5px solid #000000;
+}
+
+.cbutton:hover {
+  transform: translate(-75px, 0px);
+  background-size: cover;
+  position: absolute;
+  width: 150px;
+  height: 45px;
+  background-image: linear-gradient(to right, #000000, #00d5ff, black);
+  border: 10px solid #1ffffb;
+}
+
+#play {
+  margin-top: 0px;
+}
+
+#swords {
+  margin-top: 50px;
+}
+
+#credits {
+  margin-top: 100px;
+}
+
+#unlockSwords {
+  margin-top: 150px;
+}
+
+#creditsMenu {
+  text-align: center;
+  color: white;
+}
+
+#select {
+  text-align: center;
+  background-color: #023536;
+  ;
+  color: white;
+  width: 400px;
+  font-size: 20px;
+  position: aboslute;
+  transform: translate(290px, 0px);
+}
+
+#animatedSwordSelect {
+  width: 400px;
+  height: 600px;
+  position: absolute;
+}
+
+#unlock {
+  background-size: cover;
+  text-align: center;
+  font-size: large;
+  width: 300px;
+  height: 75px;
+  color: white;
+  border: 5px solid #000000;
+  background-image: linear-gradient(to right, #000000, #00d5ff, black);
+  position: absolute;
+  transform: translate(320px, 25px);
+}
+
+#unlock:hover {
+  background-size: cover;
+  text-align: center;
+  font-size: large;
+  width: 300px;
+  height: 75px;
+  color: white;
+  border: 10px solid #1ffffb;
+  background-image: linear-gradient(to right, #000000, #00d5ff, black);
+  position: absolute;
+  transform: translate(320px, 25px);
+}
+
+#menuUnlock {
+  background-size: cover;
+  text-align: center;
+  font-size: large;
+  width: 300px;
+  height: 75px;
+  color: white;
+  border: 5px solid #000000;
+  background-image: linear-gradient(to right, #000000, #00d5ff, black);
+  position: absolute;
+  transform: translate(320px, 125px);
+}
+
+#menuUnlock:hover {
+  background-size: cover;
+  text-align: center;
+  font-size: large;
+  width: 300px;
+  height: 75px;
+  color: white;
+  border: 10px solid #1ffffb;
+  background-image: linear-gradient(to right, #000000, #00d5ff, black);
+  position: absolute;
+  transform: translate(320px, 125px);
+}
+
+#starDustImg {
+  width: 27.5px;
+  height: 37.5px;
+  position: absolute;
+  transform: translate(12px, 12px);
+}
+
+#starDustText {
+  position: absolute;
+  transform: translate(42px, 10px);
+}
+
+.infoLevel {
+  position: absolute;
+  transform: translate(280px, 0px);
+  color: white;
+  font-size: 20px;
+  width: 400px;
+  height: 100px;
+  background-color: black;
+  text-align: center;
+  border-radius: 20%;
+  padding-top: 30px;
+}
+
+#containerForLevels {
+  position: absolute;
+  transform: translate(90px, 200px);
+  background-color: black;
+  width: 700px;
+  height: 375px;
+  padding-left: 80px;
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+#level {
+  background-color: #8ffffd;
+  width: 40px;
+  height: 30px;
+  border-radius: 10%;
+}
+
+#level:hover {
+  background-color: #8ffffd;
+  width: 40px;
+  height: 30px;
+  border-radius: 10%;
+  border: 5px solid purple;
+}
+
+#backFromLevels {
+  transform: translate(10px, 10px);
+  background-size: cover;
+  position: absolute;
+  width: 150px;
+  height: 45px;
+  background-image: linear-gradient(to right, #000000, #00d5ff, black);
+  border: 5px solid #000000;
+}
+
+#backFromLevels:hover {
+  transform: translate(10px, 10px);
+  background-size: cover;
+  position: absolute;
+  width: 150px;
+  height: 45px;
+  background-image: linear-gradient(to right, #000000, #00d5ff, black);
+  border: 10px solid #1ffffb;
+}
+
+#animationDiv {
+  width: 1000px;
+  height: 800px;
+  background-color: #000000;
+  position: absolute;
+  transform: translate(-175px, -800px);
+}
+
+#endLevelImgYouDied {
+  position: absolute;
+  left: 175px;
+  top: 100px;
+  z-index: 10000000000000000;
+}
